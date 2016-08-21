@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virus.removal.javafxapplication.FXMLDocumentController">
+   <children>
+      <Pane fx:id="panel" onMouseDragged="#mouseDrag" onMousePressed="#mousePress" prefHeight="564.0" prefWidth="917.0" style="-fx-background-color: white;">
+         <children>
+            <Pane fx:id="general" layoutX="161.0" layoutY="27.0" prefHeight="537.0" prefWidth="756.0" style="-fx-background-color: white;">
+               <children>
+                  <Pane layoutX="-6.0" layoutY="9.0" prefHeight="125.0" prefWidth="763.0" style="-fx-background-color: #00AEEF;">
+                     <children>
+                        <Text fill="WHITE" layoutX="36.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="General Settings:" wrappingWidth="149.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="36.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Version: Adware &amp; Toolbar Removal Tool" wrappingWidth="236.13671875">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="36.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Build: NO DATA" wrappingWidth="242.13671875">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Button fx:id="w" layoutX="433.0" layoutY="496.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="150.0" text="Apply" />
+                  <Button fx:id="e" layoutX="592.0" layoutY="496.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #00AEEF; -fx-border-color: #00AEEF;" text="Cancel" />
+               </children>
+            </Pane>
+            <Pane fx:id="scann" layoutX="161.0" layoutY="27.0" prefHeight="537.0" prefWidth="756.0" style="-fx-background-color: white;">
+               <children>
+                  <TextArea fx:id="textForScanInProgress" editable="false" layoutX="-5.0" layoutY="136.0" prefHeight="24.0" prefWidth="763.0" text="Virus scanning is started" /> 
+                  <Pane layoutX="-6.0" layoutY="9.0" prefHeight="125.0" prefWidth="763.0" style="-fx-background-color: #00AEEF;">
+                     <children>
+                        <Text fx:id="virusScanning" fill="WHITE" layoutX="35.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scanning..." wrappingWidth="300.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="textForThreats" fill="WHITE" layoutX="35.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="105.13671875">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="q" layoutX="599.0" layoutY="47.0" mnemonicParsing="false" onAction="#notProtectedPressed" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white;" text="Cancel Scan" />
+                        <ProgressBar fx:id="progressBar" layoutX="1.0" layoutY="116.0" prefHeight="18.0" prefWidth="763.0" progress="0.0" />
+                        <Label layoutX="120.0" layoutY="62.0" />
+                     </children>
+                  </Pane>
+                  <TextArea fx:id="textArea" editable="false" layoutX="-2.0" layoutY="161.0" prefHeight="379.0" prefWidth="763.0" /> 
+               </children>
+            </Pane>
+            <Pane fx:id="isProtected" layoutX="161.0" layoutY="27.0" prefHeight="537.0" prefWidth="756.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView layoutX="150.0" layoutY="184.0">
+                     <image>
+                        <Image url="@/img/scc.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="150.0" layoutY="297.0">
+                     <image>
+                        <Image url="@/img/sc.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="150.0" layoutY="409.0">
+                     <image>
+                        <Image url="@/img/sccc.png" />
+                     </image>
+                  </ImageView>
+                  <Pane fx:id="top11" layoutX="-6.0" layoutY="9.0" prefHeight="125.0" prefWidth="763.0" style="-fx-background-color: #3FC639;">
+                     <children>
+                        <Text fill="WHITE" layoutX="36.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Protected!" wrappingWidth="236.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="36.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your computer has been scanned and protected." wrappingWidth="306.13671875">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <!-- <Button fx:id="i" layoutX="599.0" layoutY="47.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white;" text="Start Scanning" /> -->
+                     </children>
+                  </Pane>
+                  <Text fill="#3fc639" layoutX="211.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Virus Scan" wrappingWidth="64.369140625">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#3fc639" layoutX="211.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adware Cleaner" wrappingWidth="100.1640625">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#3fc639" layoutX="211.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toolbar Cleaner" wrappingWidth="100.1640625">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="211.0" layoutY="201.0" prefHeight="17.0" prefWidth="77.0" text="Up to date" />
+                  <Label layoutX="211.0" layoutY="321.0" prefHeight="17.0" prefWidth="65.0" text="Checked" />
+                  <Label layoutX="211.0" layoutY="430.0" prefHeight="17.0" prefWidth="65.0" text="Checked" />
+               </children>
+            </Pane>
+            <Pane fx:id="dash" layoutX="161.0" layoutY="27.0" prefHeight="537.0" prefWidth="756.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView layoutX="150.0" layoutY="184.0">
+                     <image>
+                        <Image url="@/img/dashboard_lastscan.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="150.0" layoutY="297.0">
+                     <image>
+                        <Image url="@/img/dashboard_status.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="150.0" layoutY="409.0">
+                     <image>
+                        <Image url="@/img/dashboard_build.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="scan" centerShape="false" layoutX="454.0" layoutY="243.0" mnemonicParsing="false" onAction="#scanNowPressed" onMouseEntered="#scanMouseEntered" onMouseExited="#scanMouseExited" prefHeight="146.0" prefWidth="171.0" scaleShape="false" text="Scan Now">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Pane fx:id="top" layoutX="-6.0" layoutY="9.0" prefHeight="125.0" prefWidth="763.0" style="-fx-background-color: #00AEEF;">
+                     <children>
+                        <Text fill="WHITE" layoutX="36.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="149.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="36.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Version: Adware &amp; Toolbar Removal Tool" wrappingWidth="289.13671875">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text> 
+                     </children> 
+                  </Pane>
+                  <Text fx:id="statusText" fill="#00AEEF" layoutX="211.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" wrappingWidth="56.1640625">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lastScanText" fill="#00AEEF" layoutX="211.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last-Scan:" wrappingWidth="70.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="buildText" fill="#00AEEF" layoutX="211.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Build:" wrappingWidth="56.1640625">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="statusVal" layoutX="211.0" layoutY="201.0" prefHeight="17.0" prefWidth="137.0" text="Potentially Unprotected" /> 
+                  <Label fx:id="lastScanVal" layoutX="211.0" layoutY="321.0" prefHeight="17.0" prefWidth="150.0" text="NO DATA" /> 
+                  <Label fx:id="buildVal" layoutX="211.0" layoutY="430.0" prefHeight="17.0" prefWidth="65.0" text="01.01.058" /> 
+               </children>
+            </Pane>
+            <Pane fx:id="his" layoutX="161.0" layoutY="27.0" prefHeight="600.0" prefWidth="756.0">
+               <children>
+                  <TextArea fx:id="textAreaForHistory" editable="false" layoutX="-1.0" layoutY="129.0" prefHeight="417.0" prefWidth="763.0" text="" />
+                  <Pane layoutX="-6.0" layoutY="9.0" prefHeight="125.0" prefWidth="763.0" style="-fx-background-color: #00AEEF;">
+                     <children>
+                        <ImageView fx:id="imageview1" cache="true" fitHeight="84.0" fitWidth="334.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/img/history.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                        <Text fx:id="textForLastScanHistory" fill="WHITE" layoutX="457.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Scan: NO DATA" wrappingWidth="300.0">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Text fx:id="textForJobStatusInHistory" fill="#00AEEF" layoutX="211.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" wrappingWidth="56.1640625">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="textForPcNameInHistory" fill="#00AEEF" layoutX="211.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PC Name:" wrappingWidth="77.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <!-- #a8a8a8 -->
+                  <Text fx:id="textForThreatsFoundInHistory" fill="#00AEEF" layoutX="211.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Threats Found:" wrappingWidth="100.1640625">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="textValForJobStatus" layoutX="211.0" layoutY="201.0" prefHeight="17.0" prefWidth="137.0" text="NO DATA" /> 
+                  <Label fx:id="textValForPcName" layoutX="211.0" layoutY="321.0" prefHeight="17.0" prefWidth="120.0" /> 
+                  <Label fx:id="textValForThreatsFound" layoutX="211.0" layoutY="430.0" prefHeight="17.0" prefWidth="65.0" text="NO DATA" />
+                  
+               	  <Button fx:id="clearHistory" layoutX="590.0" layoutY="490.0" mnemonicParsing="false" onAction="#clearHistory" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #00AEEF; -fx-border-color: #00AEEF;" text="Clear History" />
+               </children>
+               <!-- style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white;" -->
+            </Pane>
+            <Pane fx:id="unprotected" layoutX="161.0" layoutY="27.0" prefHeight="537.0" prefWidth="756.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView layoutX="150.0" layoutY="184.0">
+                     <image>
+                        <Image url="@/img/unnn.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="150.0" layoutY="297.0">
+                     <image>
+                        <Image url="@/img/unn.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="150.0" layoutY="409.0">
+                     <image>
+                        <Image url="@/img/un.png" />
+                     </image>
+                  </ImageView>
+                  <Pane fx:id="top1" layoutX="-6.0" layoutY="9.0" prefHeight="125.0" prefWidth="763.0" style="-fx-background-color: #DF4444;">
+                     <children>
+                        <Text fill="WHITE" layoutX="36.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Potentionally Unprotected!" wrappingWidth="236.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="36.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your computer may be at risk, please perform a scan." wrappingWidth="306.13671875">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="u" layoutX="599.0" layoutY="47.0" mnemonicParsing="false" onAction="#scanningPressed" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white;" text="Start Scanning" />
+                     </children>
+                  </Pane>
+                  <Text fill="#df4444" layoutX="211.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Virus Scan" wrappingWidth="64.369140625">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#df4444" layoutX="211.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adware Cleaner" wrappingWidth="100.1640625">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#df4444" layoutX="211.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toolbar Cleaner" wrappingWidth="100.1640625">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="211.0" layoutY="201.0" prefHeight="17.0" prefWidth="80.0" text="Not up to date" />
+                  <Label layoutX="211.0" layoutY="321.0" prefHeight="17.0" prefWidth="80.0" text="Not checked" />
+                  <Label layoutX="211.0" layoutY="430.0" prefHeight="17.0" prefWidth="80.0" text="Not checked" />
+               </children>
+            </Pane>
+            <Pane fx:id="update" layoutX="161.0" layoutY="27.0" prefHeight="537.0" prefWidth="756.0">
+               <children>
+                  <Pane layoutX="-6.0" layoutY="9.0" prefHeight="125.0" prefWidth="763.0" style="-fx-background-color: #00AEEF;">
+                     <children>
+                        <Text fill="WHITE" layoutX="36.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Updates available" wrappingWidth="217.13671875">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="36.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update(s) Found:" wrappingWidth="149.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="e" layoutX="599.0" layoutY="47.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white;" text="Update Now" />
+                     </children>
+                  </Pane>
+                  <!-- Your text here... -->
+                  <TextArea editable="false" layoutY="134.0" prefHeight="407.0" prefWidth="763.0" text="" />
+                  <Button fx:id="r" layoutX="592.0" layoutY="491.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #00AEEF; -fx-border-color: #00AEEF;" text="Ignore" />
+               </children>
+            </Pane>
+            <Pane fx:id="about" layoutX="161.0" layoutY="27.0" prefHeight="537.0" prefWidth="756.0">
+               <children>
+                  <TextArea fx:id="txt" editable="false" layoutY="131.0" prefHeight="407.0" prefWidth="763.0" text="An important aspect of technology is its accessibility and moreover assurance that things will not go wrong, as everything which has to do with the technology industry and the ecosystem it has built, has grown phenomenally, so has the need for better security, more reliable interfaces, and optimal performance. Keeping just that in mind at VirusREM we&#39;ve come up with the perfect product which caters to both the mass market of consumers and the niche requirements of corporations." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextArea>
+                  <Pane layoutX="-6.0" layoutY="9.0" prefHeight="125.0" prefWidth="763.0" style="-fx-background-color: #00AEEF;">
+                     <children>
+                        <ImageView fitHeight="84.0" fitWidth="336.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/img/history.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="482.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About" wrappingWidth="149.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="482.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Version: Adware &amp; Toolbar Removal Tool" wrappingWidth="236.13671875">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="482.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device ID:" wrappingWidth="135.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Button fx:id="t" layoutX="438.0" layoutY="496.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #00AEEF; -fx-border-color: #00AEEF;" text="Help" />
+                  <Button fx:id="y" layoutX="600.0" layoutY="496.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="150.0" text="Register" />
+                  <MenuButton fx:id="drop" layoutX="22.0" layoutY="452.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="English">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#ss" text="Spanish" />
+                      <MenuItem mnemonicParsing="false" onAction="#ff" text="French" />
+                        <MenuItem mnemonicParsing="false" onAction="#gg" text="German" />
+                        <MenuItem mnemonicParsing="false" onAction="#pp" text="Portuguese" />
+                        <MenuItem mnemonicParsing="false" onAction="#ee" text="English" />
+                    </items>
+                  </MenuButton>
+               </children>
+            </Pane>
+            <!-- <Button layoutX="590.0" layoutY="2.0" mnemonicParsing="false" onAction="#protectedPressed" prefHeight="25.0" prefWidth="93.0" text="Protected" /> -->
+            <!-- <Button layoutX="504.0" layoutY="2.0" mnemonicParsing="false" onAction="#scanningPressed" prefHeight="25.0" prefWidth="79.0" text="Scanning" /> -->
+            <Button fx:id="max" layoutX="887.0" layoutY="2.0" mnemonicParsing="false" onMousePressed="#close" prefHeight="32.0" prefWidth="33.0" style="-fx-background-color: transparent;" text="x" textFill="#8c8c8c">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+            </Button>
+            <!-- <Button layoutX="396.0" layoutY="2.0" mnemonicParsing="false" onAction="#notProtectedPressed" prefHeight="25.0" prefWidth="100.0" text="Not Protected" /> -->
+            <Button fx:id="min" layoutX="854.0" layoutY="2.0" mnemonicParsing="false" onMousePressed="#minimizee" prefHeight="32.0" prefWidth="33.0" style="-fx-background-color: transparent;" text="--" textFill="#8c8c8c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane prefHeight="564.0" prefWidth="161.0" style="-fx-background-color: #232730;">
+         <children>
+            <ImageView fx:id="imageview" cache="true" fitHeight="95.0" fitWidth="182.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/img/Logo.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Button fx:id="b1" contentDisplay="RIGHT" layoutX="1.0" layoutY="167.0" mnemonicParsing="false" onAction="#b1" prefHeight="34.0" prefWidth="160.0" style="-fx-background-color: #373E48; -fx-border-radius: 0; -fx-background-radius: 0;" text="   Scan                             ">
+               <font>
+                  <Font name="System Bold" size="11.25" />
+               </font>
+            </Button>
+            <Button fx:id="b2" layoutX="1.0" layoutY="109.0" mnemonicParsing="false" onAction="#b2" prefHeight="34.0" prefWidth="160.0" style="-fx-border-radius: 0; -fx-background-radius: 0;" text="   Dashboard                   ">
+               <font>
+                  <Font name="System Bold" size="11.25" />
+               </font>
+            </Button>
+            <Button fx:id="b3" layoutY="228.0" mnemonicParsing="false" onAction="#b3" prefHeight="34.0" prefWidth="160.0" style="-fx-border-radius: 0; -fx-background-radius: 0;" text=" History                        ">
+               <font>
+                  <Font name="System Bold" size="11.25" />
+               </font>
+            </Button>
+            <Label fx:id="c1" layoutX="-5.0" layoutY="109.0" prefHeight="34.0" prefWidth="19.0" style="-fx-background-color: transparent;" />
+            <Label fx:id="c2" layoutX="-5.0" layoutY="167.0" prefHeight="34.0" prefWidth="19.0" style="-fx-background-color: #DF4444;" />
+            <Label fx:id="c3" layoutX="-5.0" layoutY="228.0" prefHeight="34.0" prefWidth="19.0" style="-fx-background-color: transparent;" />
+            <Label fx:id="c4" layoutX="50.0" layoutY="262.0" prefHeight="34.0" prefWidth="19.0" style="-fx-background-color: transparent;" />
+            <TitledPane animated="false" layoutX="1.0" layoutY="292.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="160.0" style="-fx-background-color: #232730;" text="Advanced Settings" textFill="WHITE">
+              <content>
+                <AnchorPane fx:id="dropdown" minHeight="0.0" minWidth="0.0" prefHeight="213.0" prefWidth="158.0">
+                     <children>
+                        <Button fx:id="b5" layoutX="6.0" layoutY="27.0" mnemonicParsing="false" onAction="#b5" prefHeight="25.0" prefWidth="146.0" style="-fx-background-radius: 0; -fx-border-radius: 0;" text="General Settings      " />
+                        <Button fx:id="b6" layoutX="6.0" layoutY="82.0" mnemonicParsing="false" onAction="#b6" prefHeight="25.0" prefWidth="146.0" style="-fx-background-radius: 0; -fx-border-radius: 0;" text="Update                   " />
+                        <Button fx:id="b4" layoutX="6.0" layoutY="136.0" mnemonicParsing="false" onAction="#b4" prefHeight="25.0" prefWidth="147.0" style="-fx-background-radius: 0; -fx-border-radius: 0;" text="  About                        " />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
