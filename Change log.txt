@@ -1,0 +1,57 @@
++ [Added]
+- [Removed]
+* [Bug]
+` [Fixed]
+^ [Testing]
+! [Note]
+--------------------
+07/03/16
+--------
+01.01.050
+--------
+{Prototype 1} {^}
+
++ Included JRE
++ Fixed scanning error
+* JRE install
+--------------------
+
+
+
+--------------------
+07/16/16
+--------
+01.01.054
+--------
+{Prototype 1} {^}
+
++ Finalized GUI
+--------------------
+
+
+
+--------------------
+08/14/16
+--------
+01.01.058
+--------
+{Prototype 1} {^}
+
++ Began linking GUI to backend
+on Model 1.
+! Identified bugs.
+* Scan features
+* Tracking features
+--------------------
+
+--------------------
+08/22/16
+--------
+01.01.070
+--------
+{Prototype 1} {^}
+
+!GUI Complete
+`Fixed GUI bugs. 
+*Clear History text - fix needed.
+--------------------
