@@ -55,3 +55,15 @@ on Model 1.
 `Fixed GUI bugs. 
 *Clear History text - fix needed.
 --------------------
+
+--------------------
+08/27/16
+--------
+01.01.078
+--------
+{Prototype 1} {^}
+
+!GUI Complete
+`History and timing problems fixed.
+*Cleaning up the GUI and oranizing it.
+--------------------
