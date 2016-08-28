@@ -67,3 +67,15 @@ on Model 1.
 `History and timing problems fixed.
 *Cleaning up the GUI and oranizing it.
 --------------------
+
+--------------------
+08/28/16
+--------
+01.01.081
+--------
+{Prototype 1} {^}
+
+!GUI Complete
+`Finalized the History tab.
+!GUI work -on hold.-
+--------------------
