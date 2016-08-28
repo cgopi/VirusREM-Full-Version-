@@ -76,6 +76,6 @@ on Model 1.
 {Prototype 1} {^}
 
 !GUI Complete
-`Finalized the History tab.
-!GUI work -on hold.-
++History tab msg
++File properties
 --------------------
