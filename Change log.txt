@@ -79,3 +79,16 @@ on Model 1.
 +History tab msg
 +File properties
 --------------------
+
+--------------------
+[IN DEVELOPMENT]
+--------
+01.01.093
+--------
+{Prototype 1} {^}
+
+!GUI Complete
++Created demo version
++Demo message
++Threat counter
+--------------------
