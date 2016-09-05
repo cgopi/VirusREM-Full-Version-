@@ -81,7 +81,7 @@ on Model 1.
 --------------------
 
 --------------------
-[IN DEVELOPMENT]
+09/05/16
 --------
 01.01.093
 --------
@@ -91,4 +91,20 @@ on Model 1.
 +Created demo version
 +Demo message
 +Threat counter
+--------------------
+
+--------------------
+[IN DEVELOPMENT]
+--------
+01.01.117
+--------
+{Prototype 1} {^}
+
+!GUI Complete
+*Fix "Last-Scan" text
+*Put "DEMO" in all red
+*Cut time to 10 seconds
+*Once scan is complete, it should stay green
+*History does not save
+*Add "No settings available in Demo version
 --------------------
