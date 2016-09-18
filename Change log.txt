@@ -112,14 +112,12 @@ on Model 1.
 --------------------
 [In development]
 --------
-01.01.157
+01.01.153
 --------
 {Prototype 1} {^}
 
 !GUI Complete
 *Remove the word "Updates Available" from update tab.
-+ Add mutlilanguage support
-* Language does not save when you reboot the program.
 + Help button should link to http://virusrem.com/support
 + "Install Update" button to bottom of update tab.
 + Register button should link to  http://virusrem.com/register
