@@ -101,10 +101,30 @@ on Model 1.
 {Prototype 1} {^}
 
 !GUI Complete
-*Fix "Last-Scan" text
-*Put "DEMO" in all red
-*Cut time to 10 seconds
-*Once scan is complete, it should stay green
-*History does not save
-*Add "No settings available in Demo version
+`Fix "Last-Scan" text
+`Put "DEMO" in all red
+`Cut time to 10 seconds
+`Once scan is complete, it should stay green
+`History does not save
++ "No settings available" in Demo version
+--------------------
+
+--------------------
+[In development]
+--------
+01.01.157
+--------
+{Prototype 1} {^}
+
+!GUI Complete
+*Remove the word "Updates Available" from update tab.
++ Add mutlilanguage support
+* Language does not save when you reboot the program.
++ Help button should link to http://virusrem.com/support
++ "Install Update" button to bottom of update tab.
++ Register button should link to  http://virusrem.com/register
++ Device ID should read DEMO in demo version, in full version it should read, unregistered. 
++ Add timer to the DEMO version that tells you how long is left.
+* Should run in 10 seconds.
++ Make the loading bar bigger.
 --------------------
