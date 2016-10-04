@@ -129,7 +129,7 @@ on Model 1.
 --------------------
 
 --------------------
-[IN DEVELOPMENT]
+10/03/16
 --------
 01.01.185
 --------
@@ -144,4 +144,16 @@ on Model 1.
 + Add "Updates unavailable in demo version." and center it in the white space.
 = Add timer to the DEMO version that tells you how long is left.
 + Increase time to 15 seconds
+--------------------
+
+--------------------
+[IN DEVELOPMENT]
+--------
+01.01.193
+--------
+{Prototype 1} {^}
+
+!GUI Complete
++ Square buttons.
+* Fix hover feature
 --------------------
