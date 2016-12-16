@@ -4,6 +4,7 @@
 ` [Fixed]
 ^ [Testing]
 ! [Note]
+= [Continued]
 --------------------
 07/03/16
 --------
@@ -101,10 +102,58 @@ on Model 1.
 {Prototype 1} {^}
 
 !GUI Complete
-*Fix "Last-Scan" text
-*Put "DEMO" in all red
-*Cut time to 10 seconds
-*Once scan is complete, it should stay green
-*History does not save
-*Add "No settings available in Demo version
+`Fix "Last-Scan" text
+`Put "DEMO" in all red
+`Cut time to 10 seconds
+`Once scan is complete, it should stay green
+`History does not save
++ "No settings available" in Demo version
+--------------------
+
+--------------------
+09/22/16
+--------
+01.01.153
+--------
+{Prototype 1} {^}
+
+!GUI Complete
+*Remove the word "Updates Available" from update tab.
++ Help button should link to http://virusrem.com/support
++ "Install Update" button to bottom of update tab.
++ Register button should link to  http://virusrem.com/register
++ Device ID should read DEMO in demo version, in full version it should read, unregistered. 
++ Add timer to the DEMO version that tells you how long is left.
+* Should run in 10 seconds.
++ Make the loading bar bigger.
+--------------------
+
+--------------------
+10/03/16
+--------
+01.01.185
+--------
+{Prototype 1} {^}
+
+!GUI Complete
++ Add full language support for Spanish, French, and Portuguese.
++ Add the silent install for Java.
+* Laguage settings do not save.
+* History will not save. Incorporate the new path.
+* Center the settings message under the general settings tab within the whitespace. 
++ Add "Updates unavailable in demo version." and center it in the white space.
+= Add timer to the DEMO version that tells you how long is left.
++ Increase time to 15 seconds
+--------------------
+
+--------------------
+10/10/16
+--------
+01.01.193
+--------
+{Prototype 1} {^}
+
+!GUI Complete
++ Square buttons.
+* Fix hover feature
 --------------------
